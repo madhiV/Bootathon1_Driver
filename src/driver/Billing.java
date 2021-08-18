@@ -1,4 +1,6 @@
 package driver;
-
-public class Billing {
+import javax.swing.*;
+import java.awt.Event.*;
+import java.awt.*;
+public class Billing extends JPanel{
 }

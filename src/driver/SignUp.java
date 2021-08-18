@@ -1,5 +1,7 @@
 package driver;
-
-public class SignUp {
+import javax.swing.*;
+import java.awt.Event.*;
+import java.awt.*;
+public class SignUp extends JPanel{
 
 }
