@@ -6,8 +6,6 @@ import java.awt.event.*;
 public class TabServer extends JFrame{
     JTabbedPane tabs;
     JPanel login,signup,acceptRide,feedback,update;
-    TextField txtFld1,txtFld2;
-    Label lbl1,lbl2,lbl3;
     public TabServer(){
         setTitle("DRIVER'S HOME");
         tabs=new JTabbedPane();
@@ -26,6 +24,7 @@ public class TabServer extends JFrame{
         tabs.addTab("UPDATE PROFILE",update);
         tabs.addTab("PROVIDE FEEDBACK",feedback);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         add(tabs);
     }
 }
