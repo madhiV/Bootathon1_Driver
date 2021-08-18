@@ -1,7 +1,8 @@
 package driver;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.Event;
+import java.awt.event.*;
+
 public class TabServer extends JFrame{
     JTabbedPane tabs;
     JPanel login,signup,acceptRide,feedback,update;
@@ -10,7 +11,7 @@ public class TabServer extends JFrame{
     public TabServer(){
         setTitle("DRIVER'S HOME");
         tabs=new JTabbedPane();
-        setBounds(10,10,1000,2000);
+        setBounds(0,0,1900,1000);
         setVisible(true);
         setFont(new Font("Times new roman",Font.BOLD,18));
         add(tabs,BorderLayout.CENTER);
@@ -24,7 +25,7 @@ public class TabServer extends JFrame{
         tabs.addTab("ACCEPT RIDES",acceptRide);
         tabs.addTab("UPDATE PROFILE",update);
         tabs.addTab("PROVIDE FEEDBACK",feedback);
-
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(tabs);
     }
 }
